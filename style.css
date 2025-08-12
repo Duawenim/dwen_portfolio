@@ -61,10 +61,10 @@ body {
 .site-nav {
   background: transparent;
   display: flex;
-  justify-content: center; /* Nav links right on desktop */
+  justify-content: center; 
   align-items: center;
   padding: 10px 20px;
-  animation: fadeInUp 1s ease;
+  animation: fadeInUp .5s ease;
   position: relative;
 }
 
@@ -201,3 +201,4 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
