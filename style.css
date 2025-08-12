@@ -92,9 +92,19 @@ body {
   border: none;
   font-size: 28px;
   cursor: pointer;
-  top: 10px;
-  right: 20px;
-}
+
+  /* Fix size */
+  width: 40px;
+  height: 40px;
+  line-height: 40px; /* vertically center text */
+  text-align: center;
+
+  /* Remove top/right positioning if present */
+  position: relative; /* or just no position */
+  top: auto;
+  right: auto;
+  padding: 0;
+  margin: 0;
 
 @media (max-width: 600px) {
   .menu-toggle {
@@ -184,3 +194,4 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
+
