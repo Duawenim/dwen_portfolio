@@ -34,6 +34,7 @@
     </header>
 
     <nav class="site-nav">
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -136,7 +137,12 @@
         const footer = document.querySelector(".site-footer");
         if (footer) footer.classList.add("show");
       });
+      const toggleButton = document.querySelector(".menu-toggle");
+      const navList = document.querySelector(".site-nav ul");
+
+      toggleButton.addEventListener("click", () => {
+        navList.classList.toggle("active");
+      });
     </script>
   </body>
 </html>
-
