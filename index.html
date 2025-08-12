@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DWEN JOHN PAGUNSAN - Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Scroll animation */
+      .fade-in {
+        opacity: 0;
+        transform: translateY(30px);
+        transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+      }
+      .fade-in.show {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-inner">
+        <img
+          src="Personalphoto.jpg"
+          alt="Profile Photo"
+          class="profile-photo"
+        />
+        <div class="header-text">
+          <h1 class="site-name">DWEN JOHN PAGUNSAN</h1>
+          <p class="site-sub">IT Hardware Specialist</p>
+        </div>
+      </div>
+    </header>
+
+    <nav class="site-nav">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#references">References</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="container">
+      <section id="about" class="card fade-in">
+        <h2>About</h2>
+        <p>
+          I’m a dedicated IT student eager to learn and apply my skills to
+          contribute and help my clients. With experience in hardware and
+          software technological skills.
+        </p>
+      </section>
+
+      <section id="experience" class="card fade-in">
+        <h2>Experience</h2>
+        <div class="item">
+          <h3>Assistant Project Programmer</h3>
+          <span class="period">2024 - 2025</span>
+          <p>
+            Programmed and helped develop a system at STI West Negros
+            University, a student subject evaluation for advising subjects to
+            the students of STI West Negros University.
+          </p>
+        </div>
+      </section>
+
+      <section id="education" class="card fade-in">
+        <h2>Education</h2>
+        <div class="item">
+          <h3>Bachelor of Science in Information Technology</h3>
+          <p>STI West Negros University, 2021 - 2026</p>
+          <p>Dean’s List Awardee (1st Year) 2022 - 2023</p>
+          <p>Dean’s List Awardee (2nd Year) 2023 - 2024</p>
+        </div>
+      </section>
+
+      <section id="skills" class="card fade-in">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+          <li>PHP Programming</li>
+          <li>Basic SQL</li>
+          <li>Hardware Technician</li>
+          <li>Microsoft Office</li>
+          <li>Basic Canva Skills</li>
+          <li>PHP Programmer</li>
+        </ul>
+      </section>
+
+      <section id="references" class="card fade-in">
+        <h2>References</h2>
+        <div class="reference">
+          <strong>Ian Paulo Ocalinas</strong>
+          <p>Project Manager</p>
+          <p>Phone: 0952486598</p>
+          <p>Email: ianocalinas8@gmail.com</p>
+        </div>
+        <div class="reference">
+          <strong>James B. Madrid</strong>
+          <p>Data Analyst/System Analyst</p>
+          <p>Phone: 09764919575</p>
+          <p>Email: jm08022003@gmail.com</p>
+        </div>
+      </section>
+
+      <section id="contact" class="card fade-in">
+        <h2>Contact</h2>
+        <p>Phone: 09695287404</p>
+        <p>Email: dwen4619@gmail.com</p>
+      </section>
+    </main>
+
+    <footer class="site-footer fade-in">
+      <div class="container">
+        <p>© 2025 DWEN JOHN PAGUNSAN. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const sections = document.querySelectorAll(".fade-in");
+      const revealOnScroll = () => {
+        const triggerBottom = window.innerHeight * 0.85;
+        sections.forEach((sec) => {
+          const top = sec.getBoundingClientRect().top;
+          if (top < triggerBottom) {
+            sec.classList.add("show");
+          }
+        });
+      };
+      window.addEventListener("scroll", revealOnScroll);
+      window.addEventListener("load", revealOnScroll);
+
+      window.addEventListener("load", () => {
+        const footer = document.querySelector(".site-footer");
+        if (footer) footer.classList.add("show");
+      });
+    </script>
+  </body>
+</html>
