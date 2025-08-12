@@ -1,3 +1,13 @@
+:root {
+  --bg: #fbfaf8;
+  --card: #ffffff;
+  --accent: #d8c9b6;
+  --text: #222222;
+}
+
+* {
+  box-sizing: border-box;
+}
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
@@ -157,6 +167,7 @@ body {
 #aboutme {
     font-size: 25px;
 }
+
 
 
 
